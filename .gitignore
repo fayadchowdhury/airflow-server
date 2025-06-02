@@ -1,1 +1,68 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Airflow logs and output
+logs/
+*.log
+
+# Airflow SQLite DB (for local development)
+airflow.db
+airflow.db-journal
+
+# Airflow configuration and environment files
+airflow.cfg
+webserver_config.py
+unittests.cfg
+
+# Airflow PID and scheduler files
+airflow-webserver.pid
+airflow-scheduler.pid
+
+# Airflow's .airflowignore doesn't need to be tracked (optional)
+.airflowignore
+
+# Local `.env` files and secrets
 .env
+.env.*
+
+# DAG processor pickle files (if DAG serialization is enabled)
+__dag__*  # DAG pickle temp files
+
+# DAG bag loader cache (if used)
+.dags_cache/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Python virtual environments
+venv/
+env/
+.venv/
+
+# Poetry
+poetry.lock
+poetry.toml
+
+# pipenv
+Pipfile.lock
+
+# VSCode / IDE
+.vscode/
+.idea/
+*.swp
+
+# Docker / Airflow Compose
+docker-compose*.yml
+.docker/
+docker/
+*.pid
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Airflow test database files
+test.db
+test.db-journal
